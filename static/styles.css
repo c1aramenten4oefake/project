@@ -1,0 +1,40 @@
+p {
+    color:rgb(251, 251, 251);
+    text-align: center;
+}
+
+button {
+    background:url("images/peixeAzul.jpg");
+}
+
+body {
+    background:url("images/anarcomonarquism.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar-nav li {
+    display: inline-block;
+    margin-right: 10px; /* Add some margin between the items if needed */
+}
+
+a {
+    color:yellow;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    color: #768b02;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #0056b3;
+  }

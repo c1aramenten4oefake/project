@@ -1,0 +1,45 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <form action="/register" method="post">
+        <div class="mb-3">
+            <input  autocomplete="off" autofocus required name="email" placeholder="email" type="text">
+        </div>
+        <div class="mb-3">
+            <input  autocomplete="off" autofocus required name="username" placeholder="Username" type="text">
+        </div>
+        <div class="mb-3">
+            <input name="password" required placeholder="Password" type="password">
+        </div>
+        <div class="mb-3">
+            <input  name="confirmation" required placeholder="Confirm Password" type="password">
+        </div>
+        <button type="submit" name="submit form" value="Register">Register</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Password</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for users in users %}
+                <tr>
+                    <td>{{users.username}}</td>
+                    <td>{{users.hash}}</td>
+                    <td>{{users.email}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

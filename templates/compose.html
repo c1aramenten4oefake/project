@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Compose
+{% endblock %}
+
+{% block main %}
+<form method="post" action="/send_email">
+    <textarea name="email_content" placeholder="Compose your email"></textarea>
+    <button type="submit">Send Email to All</button>
+</form>
+{% endblock %}
