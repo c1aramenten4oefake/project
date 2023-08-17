@@ -9,16 +9,8 @@
 {% endblock %}
 
 {% block main %}
-        <p>BATATAS</p>
-        <br>
-        <p>pao de queijo hmmmm</p>
-        <img src="{{ url_for('static', filename='images/peixevermelho.jpg') }}" alt="peixe" height="100" width="100">
-        <P>peixeeeeeeeeee</P>
-        <p>pwiii</p>
-    <form action="/peixe" method="get">
-        <button type="submit" value="peixees">Peixe</button>
-    </form>
-    <form action="/send_email" method="get">
-        <button type="submit" value="compose">COPOSE</button>
+    <img src="{{ url_for('static', filename='images/anarcomonarquism.jpg') }}" alt="peixe" height="100" width="100" class="INDEX">
+    <form action="/text" method="post">
+        <button type="submit" name="submit form" value="text" class="INDEX">Definition:</button>
     </form>   
 {% endblock %}

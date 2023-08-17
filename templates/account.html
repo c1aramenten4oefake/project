@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Compose
+{% endblock %}
+
+{% block main %}
+<form action="/recover" method="post">
+    <div class="mb-3">
+        <input  autocomplete="off" autofocus required name="email" placeholder="email" type="text">
+    </div>
+    <div class="mb-3">
+        <input name="password" required placeholder="New Password" type="password">
+    </div>
+    <div class="mb-3">
+        <input  name="confirmation" required placeholder="Confirm Password" type="password">
+    </div>
+    <button type="submit" name="submit form" value="recover">Recover</button>
+</form>
+{% endblock %}

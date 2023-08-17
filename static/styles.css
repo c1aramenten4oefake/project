@@ -8,14 +8,15 @@ button {
 }
 
 body {
-    background:url("images/anarcomonarquism.jpg");
+    background:url("images/back.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: 35px;
 }
 
 .navbar-nav li {
     display: inline-block;
-    margin-right: 10px; /* Add some margin between the items if needed */
+    margin-right: 20px; /* Add some margin between the items if needed */
 }
 
 a {
@@ -38,3 +39,17 @@ a {
   .nav-link:hover {
     background-color: #0056b3;
   }
+
+ .Definition {
+    color: black;
+    text-shadow: -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white, 1px 1px 2px white;
+ }
+
+ .uppertext {
+    color: black;
+    text-shadow: -1px -1px 0.5px white, 1px -1px 0.5px white, -1px 1px 0.5px white, 1px 1px 0.5px white;
+ }
+
+ .INDEX {
+    margin-left: 35px;
+ }

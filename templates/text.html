@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Text
+{% endblock %}
+
+{% block main %}
+<form action="/" method="get">
+    <button type="submit" name="submit_form" value="INDEX">Return</button>
+</form>
+<form action="/text" method="post">
+    <button type="submit" name="submit form" value="recover">Definition:</button>
+    <div class="mb-3">
+        <a id="Definition", class="Definition">{{ text }}</a>
+    </div>
+</form>
+{% endblock %}
